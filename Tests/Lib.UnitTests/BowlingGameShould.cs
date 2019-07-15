@@ -1,14 +1,12 @@
 using System;
+using NUnit.Framework;
 using Xunit;
 
 namespace software_craftsmanship.Lib.UnitTests
 {
-    public class UnitTest1
+    [TestFixture]
+    public class BowlingGameShould
     {
-        [Fact]
-        public void Test1()
-        {
 
-        }
     }
 }
