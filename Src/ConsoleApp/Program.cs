@@ -1,5 +1,7 @@
 ﻿using System;
+using BenchmarkDotNet.Running;
 using software_craftsmanship.Lib;
+using software_craftsmanship.Lib.Benchmarking;
 
 namespace software_craftsmanship.ConsoleApp
 {
@@ -9,8 +11,10 @@ namespace software_craftsmanship.ConsoleApp
         {
             Console.WriteLine("Hello Tanda");
 
-            //UnderstandingGenerics();
-            UnderstandingYield();
+            // UnderstandingGenerics();
+            // UnderstandingYield();
+
+            var summary = BenchmarkRunner.Run<BenchmarkingDifferentApproaches>();
 
 
             Console.ReadLine();
@@ -33,7 +37,7 @@ namespace software_craftsmanship.ConsoleApp
             Console.WriteLine("Generic.Field           = \"{0}\"", _bar.Field);
             Console.WriteLine("Generic.Field.GetType() = {0}", _bar.Field.GetType().FullName);
 
-            var _panda = new Generic<Panda> { Field = new Panda()};
+            var _panda = new Generic<Panda> {Field = new Panda()};
 
             Console.WriteLine("Generic.Field           = \"{0}\"", _panda.Field);
             Console.WriteLine("Generic.Field           = \"{0}\"", _panda.Field.Name);
