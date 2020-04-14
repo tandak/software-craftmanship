@@ -4,7 +4,7 @@ using Xunit;
 
 namespace software_craftsmanship.Lib.UnitTests
 {
-    [TestFixture]
+    [Collection("UnitTestFixtures")]
     public class BowlingGameShould
     {
 

@@ -19,4 +19,7 @@
     <ProjectReference Include="..\..\Src\Lib\software-craftsmanship.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="BowlingGameShould.cs" />
+  </ItemGroup>
 </Project>
