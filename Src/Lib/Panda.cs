@@ -16,9 +16,9 @@ namespace software_craftsmanship.ConsoleApp
         {
             get
             {
-                yield return new Panda(){Age = 10, Location = "London"};
-                yield return new Panda(){Age = 20, Location = "China"};
-                yield return new Panda(){Age = 47, Location = "Uganda"};
+                yield return new Panda {Age = 10, Location = "London"};
+                yield return new Panda {Age = 20, Location = "China"};
+                yield return new Panda {Age = 47, Location = "Uganda"};
             }
         }
     }

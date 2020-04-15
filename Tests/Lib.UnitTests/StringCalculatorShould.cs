@@ -1,5 +1,4 @@
 ﻿using FluentAssertions;
-using software_craftsmanship.Lib;
 using Xunit;
 
 namespace software_craftsmanship.Lib.UnitTests
@@ -15,11 +14,11 @@ namespace software_craftsmanship.Lib.UnitTests
         }
 
         [Theory]
-        [InlineData("foo", "foo2")]
+        [InlineData("foo", "foo")]
         [InlineData("bar", "bar")]
         public void Return_String(string input, string expectedString)
         {
-            var result = _sut.add(input);
+            var result = _sut.Add(input);
 
             result.Should().Be(expectedString);
         }

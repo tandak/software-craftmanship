@@ -2,24 +2,25 @@
 {
     // BEST CASE - O(N^2)
     // WORST CASE - O(N^2)
-    public class SelectionSort: ISort
+    public class SelectionSort : ISort
     {
         public int[] ReturnSortedList(int[] data)
         {
-         int i;
-         var N = data.Length;
+            int i;
+            var N = data.Length;
 
-         for (i=0; i < N-1; i++) {
-            var k = IntArrayMin (data, i);
-            if (i != k)
+            for (i = 0; i < N - 1; i++)
             {
-                var tmp = data[i];
-                data[i] = data[i + 1];
-                data[i + 1] = tmp;
+                var k = IntArrayMin(data, i);
+                if (i != k)
+                {
+                    var tmp = data[i];
+                    data[i] = data[i + 1];
+                    data[i + 1] = tmp;
+                }
             }
-         }
 
-         return data;
+            return data;
         }
 
         public static int IntArrayMin(int[] data, int start)

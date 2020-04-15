@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
+using software_craftsmanship.Lib.ChainOfResponsibility.Validation;
 using software_craftsmanship.Lib.ChainOfResponsiblity;
-using software_craftsmanship.Lib.ChainOfResponsiblity.Validation;
 using Xunit;
 
 namespace software_craftsmanship.Lib.UnitTests
@@ -34,7 +34,7 @@ namespace software_craftsmanship.Lib.UnitTests
                 Gender = "Non-Binary"
             };
 
-            Assert.Throws<ValidationException>(() => sut.Register(user));
+            Assert.Throws<AgeValidationException>(() => sut.Register(user));
         }
 
         [Fact]
@@ -47,7 +47,7 @@ namespace software_craftsmanship.Lib.UnitTests
                 Gender = "Non-Binary"
             };
 
-            Assert.Throws<ValidationException>(() => sut.Register(user));
+            Assert.Throws<NameValidationaException>(() => sut.Register(user));
         }
     }
 }

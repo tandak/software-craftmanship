@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace software_craftsmanship.Lib
+namespace software_craftsmanship.Lib.Benchmarking
 {
     public class GetAttributesBenchmark
     {

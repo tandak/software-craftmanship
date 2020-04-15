@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace software_craftsmanship.Lib
+namespace software_craftsmanship.Lib.Benchmarking
 {
     public class MaxPurchasableV2
     {

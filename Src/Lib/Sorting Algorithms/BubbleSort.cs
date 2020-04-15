@@ -2,25 +2,22 @@
 {
     // O(N^2) - WORST CASE
     // O(N) - BEST CASE
-    public class BubbleSort: ISort
+    public class BubbleSort : ISort
     {
-        public int[] ReturnSortedList(int [] data)
+        public int[] ReturnSortedList(int[] data)
         {
             int i, j;
             var N = data.Length;
 
             for (j = N - 1; j > 0; j--)
-            {
-                for (i = 0; i < j; i++)
+            for (i = 0; i < j; i++)
+                if (data[i] > data[i + 1])
                 {
-                    if (data[i] > data[i + 1])
-                    {
-                        var tmp = data[i];
-                        data[i] = data[i + 1];
-                        data[i + 1] = tmp;
-                    }
+                    var tmp = data[i];
+                    data[i] = data[i + 1];
+                    data[i + 1] = tmp;
                 }
-            }
+
             return data;
         }
     }

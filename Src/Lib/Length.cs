@@ -6,20 +6,20 @@ namespace software_craftsmanship.Lib
     [TypeConverter(typeof(ExpandableObjectConverter))]
     public class Length
     {
+        public Unit Unit { get; set; }
+
+        public float Value { get; set; }
+
         public override string ToString()
         {
             string value;
             string unit;
 
-            value = this.Value.ToString(CultureInfo.InvariantCulture);
-            unit = this.Unit.ToString();
+            value = Value.ToString(CultureInfo.InvariantCulture);
+            unit = Unit.ToString();
 
             return string.Concat(value, unit);
         }
-
-        public Unit Unit { get; set; }
-
-        public float Value { get; set; }
     }
 
     internal class SampleClass

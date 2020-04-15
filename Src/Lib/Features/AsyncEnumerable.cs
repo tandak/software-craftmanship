@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace software_craftsmanship.Lib.Features
@@ -15,13 +16,13 @@ namespace software_craftsmanship.Lib.Features
         //Basic
         public void GetInts()
         {
-            IEnumerable src = new List<int>(){ 1, 3, 4, 7};
+            IEnumerable src = new List<int> {1, 3, 4, 7};
             foreach (int item in src) Use(item);
         }
 
         private void Use(int item)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

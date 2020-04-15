@@ -1,4 +1,4 @@
-﻿namespace software_craftsmanship.Lib.ChainOfResponsiblity
+﻿namespace software_craftsmanship.Lib.ChainOfResponsibility
 {
     public abstract class Handler<T> : IHandler<T> where T : class
     {
@@ -16,7 +16,7 @@
         }
     }
 
-    public interface IHandler<T> where T: class
+    public interface IHandler<T> where T : class
     {
         IHandler<T> SetNext(IHandler<T> next);
 

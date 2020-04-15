@@ -1,4 +1,4 @@
-﻿namespace software_craftsmanship.Lib.ChainOfResponsiblity.Validation
+﻿namespace software_craftsmanship.Lib.ChainOfResponsibility.Validation
 {
     public class GenderValidationException : ValidationException
     {

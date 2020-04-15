@@ -1,12 +1,8 @@
-﻿namespace software_craftsmanship.Lib.UnitTests
+﻿namespace software_craftsmanship.Lib
 {
     public class StringCalculator
     {
-        public StringCalculator()
-        {
-        }
-
-        public string add(string s)
+        public string Add(string s)
         {
             return s;
         }

@@ -9,10 +9,7 @@ namespace software_craftsmanship.Lib
         {
             var p = new Pandas();
             foreach (var poo in p.PandaZoo)
-            {
                 Debug.WriteLine($"Name: {poo.Name}, Age: {poo.Age}, Location: {poo.Location}");
-            }
         }
-
     }
 }

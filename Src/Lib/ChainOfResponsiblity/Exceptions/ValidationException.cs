@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace software_craftsmanship.Lib.ChainOfResponsiblity.Validation
+namespace software_craftsmanship.Lib.ChainOfResponsibility.Validation
 {
     public class ValidationException : Exception
     {
