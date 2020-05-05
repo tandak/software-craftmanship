@@ -1,11 +1,4 @@
-﻿
-using System.Net.Http;
-using System.Runtime.CompilerServices;
-using System.Threading;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-
-namespace software_craftsmanship.Lib.Features
+﻿namespace software_craftsmanship.Lib.Features
 {
     /*
      * Understanding Async Enumerable

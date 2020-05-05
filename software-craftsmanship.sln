@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{99367B23-4F2F-439C-BE38-6A8EC0793680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "software-craftsmanship.ConsoleApp", "Src\ConsoleApp\software-craftsmanship.ConsoleApp.csproj", "{1DAC0608-D9EF-4DFA-8177-74897350FBD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "software-craftsmanship.ConsoleApp", "Src\ConsoleApp\software-craftsmanship.ConsoleApp.csproj", "{1DAC0608-D9EF-4DFA-8177-74897350FBD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "software-craftsmanship.Lib", "Src\Lib\software-craftsmanship.Lib.csproj", "{1CF13BD3-197F-45D7-9A31-CDD4316BB700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "software-craftsmanship.Lib", "Src\Lib\software-craftsmanship.Lib.csproj", "{1CF13BD3-197F-45D7-9A31-CDD4316BB700}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D05A1CCB-C55B-47A1-B4F6-40F6A06331DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "software-craftsmanship.Lib.UnitTests", "Tests\Lib.UnitTests\software-craftsmanship.Lib.UnitTests.csproj", "{0858BD4F-2548-4FA5-B518-70CB590B0543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "software-craftsmanship.Lib.UnitTests", "Tests\Lib.UnitTests\software-craftsmanship.Lib.UnitTests.csproj", "{0858BD4F-2548-4FA5-B518-70CB590B0543}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1DAC0608-D9EF-4DFA-8177-74897350FBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -63,9 +60,15 @@ Global
 		{0858BD4F-2548-4FA5-B518-70CB590B0543}.Release|x86.ActiveCfg = Release|Any CPU
 		{0858BD4F-2548-4FA5-B518-70CB590B0543}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1DAC0608-D9EF-4DFA-8177-74897350FBD9} = {99367B23-4F2F-439C-BE38-6A8EC0793680}
 		{1CF13BD3-197F-45D7-9A31-CDD4316BB700} = {99367B23-4F2F-439C-BE38-6A8EC0793680}
 		{0858BD4F-2548-4FA5-B518-70CB590B0543} = {D05A1CCB-C55B-47A1-B4F6-40F6A06331DC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {843EB4C0-DD45-43F5-9A91-E01AF9EC4A0C}
 	EndGlobalSection
 EndGlobal

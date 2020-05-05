@@ -7,7 +7,7 @@ namespace software_craftsmanship.Lib.UnitTests
     public class FooShould
     {
         [Fact]
-        public void Return_True_When_Majority_Of_Sample_Is_Below_Threshold() 
+        public void Return_True_When_Majority_Of_Sample_Is_Below_Threshold()
         {
             var input = new[] {200, 500, 500, 70, 200, 190, 100, 200, 111, 123, 193, 147, 192, 92, 54};
 
@@ -21,17 +21,12 @@ namespace software_craftsmanship.Lib.UnitTests
     {
         public bool ShouldDownscale(int[] input)
         {
-            int isLower = 0;
+            var isLower = 0;
             foreach (var foo in input)
-            {
                 if (foo <= 200)
-                {
                     isLower++;
-                }
-            }
-            var result = ((double)isLower / 15)* 100;
+            var result = (double) isLower / 15 * 100;
             return result > 80;
-
         }
     }
 }

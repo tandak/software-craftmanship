@@ -1,7 +1,7 @@
 ﻿using software_craftsmanship.Lib.ChainOfResponsibility;
 using software_craftsmanship.Lib.ChainOfResponsibility.Validation;
 
-namespace software_craftsmanship.Lib.ChainOfResponsiblity
+namespace software_craftsmanship.DesignPatterns.Behavioral_Design_Patterns.ChainOfResponsiblity
 {
     public class UserProcessor
     {

@@ -1,13 +1,18 @@
 ﻿using FluentAssertions;
+using software_craftsmanship.DesignPatterns.Behavioral_Design_Patterns.ChainOfResponsiblity;
 using software_craftsmanship.Lib.ChainOfResponsibility.Validation;
-using software_craftsmanship.Lib.ChainOfResponsiblity;
 using Xunit;
 
 namespace software_craftsmanship.Lib.UnitTests
 {
     public class UserProcesserShould
     {
-        private UserProcessor sut = new UserProcessor();
+        private readonly UserProcessor _sut;
+
+        public UserProcesserShould()
+        {
+            _sut = new UserProcessor();
+        }
 
         [Fact]
         public void Return_True_When_User_Is_Valid()
@@ -19,7 +24,7 @@ namespace software_craftsmanship.Lib.UnitTests
                 Gender = "Non-Binary"
             };
 
-            var result = sut.Register(user);
+            var result = _sut.Register(user);
 
             result.Should().BeTrue();
         }
@@ -34,7 +39,7 @@ namespace software_craftsmanship.Lib.UnitTests
                 Gender = "Non-Binary"
             };
 
-            Assert.Throws<AgeValidationException>(() => sut.Register(user));
+            Assert.Throws<AgeValidationException>(() => _sut.Register(user));
         }
 
         [Fact]
@@ -47,7 +52,7 @@ namespace software_craftsmanship.Lib.UnitTests
                 Gender = "Non-Binary"
             };
 
-            Assert.Throws<NameValidationaException>(() => sut.Register(user));
+            Assert.Throws<NameValidationaException>(() => _sut.Register(user));
         }
     }
 }

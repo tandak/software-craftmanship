@@ -1,4 +1,4 @@
-﻿namespace software_craftsmanship.Lib
+﻿namespace software_craftsmanship.Lib.Katas
 {
     public class StringCalculator
     {

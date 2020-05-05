@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using software_craftsmanship.Lib.Katas;
 using Xunit;
 
 namespace software_craftsmanship.Lib.UnitTests
@@ -6,7 +7,7 @@ namespace software_craftsmanship.Lib.UnitTests
     [Collection("UnitTestFixtures")]
     public class StringCalculatorShould
     {
-        private StringCalculator _sut;
+        private readonly StringCalculator _sut;
 
         public StringCalculatorShould()
         {

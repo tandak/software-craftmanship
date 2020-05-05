@@ -5,9 +5,6 @@ namespace software_craftsmanship.Lib.Benchmarking
 {
     public class BenchmarkingDifferentApproaches
     {
-        private readonly MaxPurchasableV1 _v1 = new MaxPurchasableV1();
-        private readonly MaxPurchasableV2 _v2 = new MaxPurchasableV2();
-
         private readonly List<Attribute> _attributes = new List<Attribute>
         {
             new Attribute
@@ -83,6 +80,8 @@ namespace software_craftsmanship.Lib.Benchmarking
         };
 
         private readonly GetAttributesBenchmark _attributesBenchmark = new GetAttributesBenchmark();
+        private readonly MaxPurchasableV1 _v1 = new MaxPurchasableV1();
+        private readonly MaxPurchasableV2 _v2 = new MaxPurchasableV2();
 
 
         //[Benchmark]

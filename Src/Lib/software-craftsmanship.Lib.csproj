@@ -19,8 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ChainOfResponsiblity\" />
-    <Folder Include="ChainOfResponsiblity\Validation\" />
-    <Folder Include="ChainOfResponsiblity\Exceptions\" />
+    <Folder Include="Design Patterns\Creational\" />
+    <Folder Include="Design Patterns\Structural\" />
   </ItemGroup>
 </Project>
