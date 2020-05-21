@@ -23,7 +23,7 @@ namespace software_craftsmanship.Lib.UnitTests
 
             var result = _customer.PrintBill();
 
-            Assert.Equal(result, 2.5);
+            Assert.Equal(2.5, result);
         }
 
 
@@ -35,7 +35,7 @@ namespace software_craftsmanship.Lib.UnitTests
 
             var result = _customer.PrintBill();
 
-            Assert.Equal(result, 5);
+            Assert.Equal(5, result);
         }
 
         [Fact]
@@ -50,7 +50,7 @@ namespace software_craftsmanship.Lib.UnitTests
 
             var result = _customer.PrintBill();
 
-            Assert.Equal(result, 12.5);
+            Assert.Equal(12.5, result);
         }
     }
 }
