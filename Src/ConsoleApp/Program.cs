@@ -1,7 +1,9 @@
 ﻿using System;
-using BenchmarkDotNet.Running;
+using System.Management;
 using software_craftsmanship.Lib;
-using software_craftsmanship.Lib.Benchmarking;
+using software_craftsmanship.Lib.Cache;
+using software_craftsmanship.Lib.Extensions;
+using StackExchange.Redis;
 
 namespace software_craftsmanship.ConsoleApp
 {
@@ -14,10 +16,36 @@ namespace software_craftsmanship.ConsoleApp
             // UnderstandingGenerics();
             // UnderstandingYield();
 
-            var summary = BenchmarkRunner.Run<BenchmarkingDifferentApproaches>();
+            //var summary = BenchmarkRunner.Run<BenchmarkingDifferentApproaches>();
 
+            //UnderstandingMemoryCache();
+
+            UnderstandingRedisCache();
 
             Console.ReadLine();
+        }
+
+        private static void UnderstandingMemoryCache()
+        {
+            var product = new Product(Department.WS, 0987, "ASOS Design Dress", 20.00);
+
+            var cache = new MemoryCacheDemo();
+
+            cache.AddToCache(product);
+
+            var product1 = cache.ReadFromCache(product.Id);
+            var product2 = cache.ReadFromCache(1234);
+
+            Console.WriteLine(product1.ToProductString());
+            Console.WriteLine(product2.ToProductString());
+        }
+
+        public static void UnderstandingRedisCache()
+        {
+            var cache = new RedisCacheConnectorHelper();
+
+            cache.AddToCache(null);
+            cache.ReadFromCache(1);
         }
 
         private static void UnderstandingYield()
